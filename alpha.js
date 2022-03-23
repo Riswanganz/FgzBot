@@ -124,7 +124,7 @@ const autosticker = JSON.parse(fs.readFileSync('./database/autosticker.json'))
 ky_ttt = []
 tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"]
 cmhit = []
-fake = "/> Alpha Botzz";
+fake = "/> Wanz Botzz";
 autorespon = settings.AutoRespon
 playmusic = settings.AutoMusic
 antidelete = settings.AntiDelete
@@ -351,11 +351,11 @@ return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a
 }
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = alpha.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© Alpha Botz Whatsapp_*", "thumbnail": ftex, "surface": 'CATALOG' }}, {quoted:ftex})
+             res = alpha.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© Wanz Botz Whatsapp_*", "thumbnail": ftex, "surface": 'CATALOG' }}, {quoted:ftex})
              alpha.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = alpha.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/JI25LDtPW784GAZoRD9fW9', "groupName": `Alpha Botz Whatsapp`, "footerText": "*_© Alpha Botz Whatsapp_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = alpha.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/JI25LDtPW784GAZoRD9fW9', "groupName": `Wanz Botz Whatsapp`, "footerText": "*_© Wanz Botz Whatsapp_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             alpha.relayWAMessage(grup)
         }
 		idttt = []
@@ -730,7 +730,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Alpha Botz Whatsapp_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Wanz Botz Whatsapp_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -743,7 +743,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Alpha Botz Whatsapp_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hai ${pushname}, Maaf sepertinya saat ini ${NamaOwner} sedang Offline\n\n*Alasan :* ${alasanafk}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik\n\nSilahkan hubungi lagi setelah Online`, "*_© Wanz Botz Whatsapp_*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -793,7 +793,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
                 });
             }
             const sendKontak = (from, nomor, nama) => {
-	        const vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + nama + '\n' + `ORG:Developer Alpha Botz Whatsapp\n` + 'TEL;type=CELL;type=VOICE;waid=' + nomor + ':+' + nomor + '\n' + 'END:VCARD'
+	        const vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + nama + '\n' + `ORG:Developer Wanz Botz Whatsapp\n` + 'TEL;type=CELL;type=VOICE;waid=' + nomor + ':+' + nomor + '\n' + 'END:VCARD'
 	        alpha.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {quoted:mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
             }
             const hideTagKontak = async function(from, nomor, nama){
@@ -1043,10 +1043,10 @@ if (!settings.autorecording) {
 alpha.updatePresence(from, Presence.recording)
 }
 if (budy.startsWith('bot')){
-sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_©Alpha Botz*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
+alpha.sendButMessage(from, "*_©Wanz Botz*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
-reply('http://instagram.com/ff.lexxy._')
+reply('http://instagram.com/memes.lucu01')
 }
 if(isButton == 'ytm'){
 reply('http://youtube.com/c/LEX4YOUU')
@@ -1766,7 +1766,7 @@ break
  
  listMsg = {
  buttonText: 'LIST ASUPAN',
- footerText: 'Alpha Botz✓',
+ footerText: 'Wanz Botz✓',
  description: `Hai kak☺️ Silahkan pilih menu asupan disini,Gunakan Dengan Bijak Ya kakk`,
  sections: [
                      {
@@ -1892,7 +1892,7 @@ break
 //LUPA
        case 'maker3d': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Alpha Botz Whatsapp`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Wanz Botz Whatsapp`)
 					teksnya = args.join(" ")
 					sticWait(from)
 					anu = await fetchJson(`https://xnxxapi.herokuapp.com/api/maker3d?text=${teksnya}&apikey=xnxx`)
@@ -1902,7 +1902,7 @@ break
 					
 					case 'maker2d': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Alpha Botz Whatsapp`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Wanz Botz Whatsapp`)
 					teksnya = args.join(" ")
 					sticWait(from)
 					anu = await fetchJson(`https://xnxxapi.herokuapp.com/api/maker?text=${teksnya}&apikey=xnxx`)
@@ -1911,7 +1911,7 @@ break
 					break
 					case 'epepserti': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Alpha Botz Whatsapp`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Wanz Botz Whatsapp`)
 					teksnya = args.join(" ")
 					sticWait(from)
 					anu = await fetchJson(`https://xnxxapi.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=xnxx`)
@@ -1920,7 +1920,7 @@ break
 					break		
 					case 'transformer': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Alpha Botz Whatsapp`)
+                    if (args.length < 1) return reply(`*Example :*\n${prefix + command} Wanz Botz Whatsapp`)
 					teksnya = args.join(" ")
 					sticWait(from)
 					anu = await fetchJson(`https://xnxxapi.herokuapp.com/api/maker/special/transformer?text=${teksnya}&apikey=xnxx`)
@@ -2996,7 +2996,7 @@ anu =`Silahkan pilih salah satu di bawah`
  buttons = [{buttonId: 'setmenu ori', buttonText: {displayText: 'ORI'}, type: 1},{buttonId: 'setmenu simpel', buttonText: {displayText: 'SIMPEL'}, type: 1}]
 const skuygelud = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: buttons,
     headerType: 1
 }
@@ -3016,7 +3016,7 @@ anu =`Silahkan pilih salah satu di bawah`
  buttons = [{buttonId: 'setallmenu ori', buttonText: {displayText: 'ORI'}, type: 1},{buttonId: 'setallmenu simpel', buttonText: {displayText: 'SIMPEL'}, type: 1}]
 const skuygf = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: buttons,
     headerType: 1
 }
@@ -3047,12 +3047,12 @@ let ini_list = []
 for (let i of ownerNumber) {
 const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 ini_list.push({
-"displayName": `Developer Alpha Botz Whatsapp`,
+"displayName": `Developer Wanz Botz Whatsapp`,
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;${NamaOwner};;;\nFN:${vname ? `${vname}` : `${NamaOwner}`}\nitem1.TEL;waid=${NomorOwner}:${NomorOwner2}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 alpha.sendMessage(from, {
-"displayName": `Developer Alpha Botz Whatsapp`,
+"displayName": `Developer Wanz Botz Whatsapp`,
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
 break
@@ -3093,7 +3093,7 @@ anu = `──────────────────
 NOTE : _DILARANG JUAL SC BOT_
 ──────────────────
 _BASE : DCODE DENPA_
-_SC ORI : Alpha Botz_
+_SC ORI : Wanz Botz_
 _KANG RECODE : ${NamaOwner}_
 ⍟ ────────────────── ⍟`
 buttons = [
@@ -3133,7 +3133,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 "templateMessage": {
 						"hydratedTemplate": {
 							"hydratedContentText": `Hi ${pushname} 👋,\n\n${jmn} - ${week} ${weton} - ${calender}`,
-							"hydratedFooterText": `Alpha Botz Whatsapp`,
+							"hydratedFooterText": `Wanz Botz Whatsapp`,
 							"hydratedButtons": [
 								{
 									"quickReplyButton": {
@@ -3181,12 +3181,12 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
   },
   "hydratedTemplate": {
     "hydratedContentText": `Hi ${pushname} 👋,\n\n${jmn} - ${week} ${weton} - ${calender}`,
-    "hydratedFooterText": `Alpha Botz Whatsapp`,
+    "hydratedFooterText": `Wanz Botz Whatsapp`,
     "hydratedButtons": [
       {
         "urlButton": {
-          "displayText": `Script Alpha Botz Whatsapp`,
-          "url": "https://github.com/Lexxy24"
+          "displayText": `Script Wanz Botz Whatsapp`,
+          "url": "https://github.com/Riswanganz"
         },
         "index": 0
       }
@@ -3336,7 +3336,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 const buttons = [{buttonId: 'autorespon on', buttonText: {displayText: 'ON✔️'}, type: 1},{buttonId: 'autorespon off', buttonText: {displayText: 'OFF✖️'}, type: 1}]
 const btnharam = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: buttons,
     headerType: 1
 }
@@ -3356,7 +3356,7 @@ await alpha.sendMessage(from, btnharam, MessageType.buttonsMessage, {quoted: fte
 const buttons = [{buttonId: 'antidelete on', buttonText: {displayText: 'ON✔️'}, type: 1},{buttonId: 'antidelete off', buttonText: {displayText: 'OFF✖️'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: buttons,
     headerType: 1
 }
@@ -3874,7 +3874,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 punten = [{buttonId: 'antivirtex off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antivirtex on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: punten,
     headerType: 1
 }
@@ -3903,7 +3903,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 punten = [{buttonId: 'antiwame off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antiwame on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: punten,
     headerType: 1
 }
@@ -3932,7 +3932,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 punten = [{buttonId: 'antilink off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antilink on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: punten,
     headerType: 1
 }
@@ -3957,7 +3957,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 punten = [{buttonId: 'antibug off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antibug on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btasu = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botzz_*',
+    footerText: '*_©Wanz Botzz_*',
     buttons: punten,
     headerType: 1
 }
@@ -4216,7 +4216,7 @@ if (args.length < 1) return reply('Teksnya?')
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
   if (args.length < 1) return reply('Teksnya?')
                     teks = body.slice(12)
-                    alpha.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`Alpha Botz Whatsapp`}, MessageType.location)
+                    alpha.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`Wanz Botz Whatsapp`}, MessageType.location)
                     reply(`Sukses upload lokasi:\n${teks}`)
                     break	
                     case 'upswsticker':
@@ -4421,13 +4421,13 @@ break
             break
 				case 'attp':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-					if (!c) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}attp Alpha Botz Whatsapp`)
+					if (!c) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}attp Wanz Botz Whatsapp`)
 					atetepe = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(c)}`)
 					alpha.sendMessage(from, atetepe, sticker, { quoted: mek })
 					break
                 case 'ttp':  
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-                    if (!c) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}attp Alpha Botz Whatsapp`)
+                    if (!c) return reply(`Teks Nya Mana Kak?\nContoh :\n${prefix}attp Wanz Botz Whatsapp`)
                     anu1 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${c}`)
                     alpha.sendMessage(from, anu1, image, {quoted: mek, caption : `${prefix}sticker`})
                     break
@@ -4730,7 +4730,7 @@ var nn = body.slice(9)
               if (!isGroupAdmins) return sticAdmin(from)
               if (!isBotGroupAdmins) return sticNotAdmin(from)
               sendBug(from)
-              alpha.groupUpdateSubject(from, `HACKED BY Alpha Botz Whatsapp`)
+              alpha.groupUpdateSubject(from, `HACKED BY Wanz Botz Whatsapp`)
                 alpha.groupUpdateDescription(from, `_${me.jid}_`)
              alpha.updateProfilePicture(from, fs.readFileSync('./media/image/me.jpg'))
                 alpha.sendMessage(from, 'Succes!', text, {quoted: ftex})
@@ -4741,7 +4741,7 @@ var nn = body.slice(9)
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (args.length < 1) return reply('Jumlahnya?')
 for (let i = 0; i < args[0]; i++) {
-alpha.sendMessage(from, `Alpha Botz Whatsapp`, MessageType.extendedText,{
+alpha.sendMessage(from, `Wanz Botz Whatsapp`, MessageType.extendedText,{
  quoted: {
 key: {
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
@@ -4837,7 +4837,7 @@ case 'bugtroli2':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (args.length < 1) return reply('Jumlahnya?')
 		        try {
-		        var hets = `Alpha Botz Whatsapp`
+		        var hets = `Wanz Botz Whatsapp`
 		        var grousp = await alpha.groupMetadata(from)
                 var membere = grousp['participants']
                 var mems = []
@@ -4861,7 +4861,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 						"itemCount": -3599964009,
 						"status": "INQUIRY",
 						"surface": "CATALOG",
-						"message": `Alpha Botz Whatsapp`,
+						"message": `Wanz Botz Whatsapp`,
 						"orderTitle": `${NamaOwner}`,
 						"sellerJid": "6283161567237@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
@@ -4880,7 +4880,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 						"itemCount": -3599964009,
 						"status": "INQUIRY",
 						"surface": "CATALOG",
-						"message": `Alpha Botz Whatsapp`,
+						"message": `Wanz Botz Whatsapp`,
 						"orderTitle": `${NamaOwner}`,
 						"sellerJid": "6283161567237@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
@@ -4891,7 +4891,7 @@ if (args.length < 1) return reply('Jumlahnya?')
 case 'bugcombine':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
                  alpha.toggleDisappearingMessages(from, 'HACKED')
-alpha.sendMessage(from, `Alpha Botz Whatsapp`, text, {
+alpha.sendMessage(from, `Wanz Botz Whatsapp`, text, {
  quoted: {
   key: {
    participant: '0@s.whatsapp.net' // Fake sender Jid
@@ -4901,7 +4901,7 @@ alpha.sendMessage(from, `Alpha Botz Whatsapp`, text, {
     itemCount: 9999999, // Bug
     status: 1,
     surface: 1,
-    message: `Alpha Botz Whatsapp`,
+    message: `Wanz Botz Whatsapp`,
     orderTitle: `${NamaOwner}`, // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }
@@ -4920,7 +4920,7 @@ alpha.updatePresence(from, Presence.composing)
 		       alpha.sendMessage(from, {degreesLatitude: 34.0184,
 						degreesLongitude: -118.411,
 						name: `${NamaOwner}`,
-						address: `Alpha Botz Whatsapp`,
+						address: `Wanz Botz Whatsapp`,
                         jpegThumbnail: dfrply },location,{
  quoted: {
   key: {
@@ -4932,7 +4932,7 @@ alpha.updatePresence(from, Presence.composing)
     status: 1,
     surface: 1,
     message: `${NamaOwner}`,
-    orderTitle: `Alpha Botz Whatsapp`, // 
+    orderTitle: `Wanz Botz Whatsapp`, // 
     sellerJid: '0@s.whatsapp.net' // Seller
    }
   }
@@ -4953,7 +4953,7 @@ alpha.sendMessage(from, 'yaudah oke',text, {
     itemCount: 70000, // Bug
     status: 1,
     surface: 1,
-    message: `Alpha Botz Whatsapp`,
+    message: `Wanz Botz Whatsapp`,
     orderTitle: `${NamaOwner}`, // 
     sellerJid: '0@s.whatsapp.net' // Seller
    }
@@ -5443,7 +5443,7 @@ break
 punten = [{buttonId: 'welcome off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'welcome on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btngrass = {
     contentText: `${anu}`,
-    footerText: '*_©Alpha Botz Whatsapp_*',
+    footerText: '*_©Wanz Botz Whatsapp_*',
     buttons: punten,
     headerType: 1
 }
